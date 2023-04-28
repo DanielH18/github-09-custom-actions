@@ -68,5 +68,7 @@ jobs:
   information:
     runs-on: ubuntu-latest
     steps:
+      - name: Get code # this is ONLY used by local custom actions!!!
+        uses: actions/checkout@v3
       - name: Runs my javascript action
         uses: ./.github/actions/deploy-s3-javascript # use my own (local) custom javascript action
