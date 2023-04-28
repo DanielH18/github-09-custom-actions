@@ -7,8 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# ignore the root level node_modules only
 /node_modules
-dist
+# ignore the root level dist folder only
+/dist
 dist-ssr
 *.local
 
