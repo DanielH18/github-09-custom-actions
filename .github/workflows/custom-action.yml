@@ -71,6 +71,6 @@ jobs:
       - name: Get code # this is ONLY used by local custom actions!!!
         uses: actions/checkout@v3
       - name: Show files
-        run: ls
+        run: ls && cd ./.github/actions/deploy-s3-javascript/node_modules && ls
       - name: Runs my javascript action
         uses: ./.github/actions/deploy-s3-javascript # use my own (local) custom javascript action
